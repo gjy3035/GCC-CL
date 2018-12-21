@@ -1,2 +1,2 @@
 # GCC-CL
-GCC dataset Collector and Lableer (GCC CL)
+**GCC** dataset **C**ollector and **L**ableer (GCC CL)
