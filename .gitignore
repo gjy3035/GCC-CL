@@ -4,3 +4,6 @@ x64
 packages
 packages.config
 
+# GCC-Labeler
+source
+target
