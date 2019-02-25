@@ -1,6 +1,6 @@
 # GCC-CL
 
-GCC-CL(**GCC** dataset **C**ollector and **L**abeler) is a tool for creating synethic crowd images dataset. It consist two parts, collector and labeler, which are used to generate image information and generate input/output for crowd count model respectively.
+GCC-CL(**GCC** dataset **C**ollector and **L**abeler) is a tool for generating synethic crowd image datasets. It consists of two parts, collector and labeler, which are used to generate image information and generate input/output for crowd count model respectively.
 
 **Attention!!!** All mods must be used in the offline version of GTA V. 
 
@@ -20,7 +20,7 @@ GCC-Collector is a tool to generate crowd image and head points in GTA V. It is 
 2. Open the project (GCC-Collector) property pages, `General/Windos SDK Version`, **select the latest win10 SDK** in your computer.
 3. Install **minihook** and **eigen** using  `NuGet`.
 4. Add the compiled DirectXTK and the lastest Script Hook V to the project (`GCC-Collector/deps`).
-5. Make sure Configution is **release**, Platform is **x64**, and then `ctrl + shift + B` to compile the project. As a result, the `GCC-Collector.asi` will be generated.
+5. Make sure Configution is **release**, Platform is **x64**, and then use hot key `ctrl + shift + B` to compile the project. As a result, asi file `GCC-Collector.asi` will be generated.
 
 ### Installation
 
@@ -28,41 +28,41 @@ GCC-Collector is a tool to generate crowd image and head points in GTA V. It is 
 2. Use [this mod](https://www.gta5-mods.com/misc/no-chromatic-aberration-lens-distortion-1-41) to avoid chromatic aberration and lens distortion;
 3. Compile or directly use the compiled plugin-in `unlimitedLife.asi`, `noVehicle.asi`. Just copy these two asi to the games's root folder.
 > - `unlimitedLife.asi` make sure the player undead. 
-> - `noVehicle.asi` is optional. when you create some crowd image in street, you would not want some vehicle come into screen and cause an accident. This plugin-in avoid this things.
+> - `noVehicle.asi` is optional. When you are creating some crowd images in the street, this plugin-in helps you avoid accidents caused by vehicles entering the scene.
 
-### How to run
+### How to work
 
-To create a series of crowd images in one scene, you should do these things:
-1. Create a directory named `data` in the game's main folder.
-2. Control your role in GTAV to go to a place, which will be the background of the crowd images.
+To create a series of crowd images in one scene, You should follow the steps below:
+1. Create a directory named `data` in the game's root folder.
+2. Control your role in GTAV go to the scene where you want use it as the background of the generated crowd images.
 3. Press `F9` to start a scene script;
-4. Press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. When the camera is fixed, press `F10` again to stop adjust camera and record camera location information automatically.
-5. press `F11` to define the area where the crowd will be generated. It would be better if you create a convex area. press `I` to recorded one point of the area, and `F10` to toggle to the camera location you defined and press `F10` again you will back tou the role whole you control to define the area. If you want to reset some point of the area , just press `Tab` to the point and reset it. In the end , press `F11` again to end define the area. Following the guide to readjust the camera, and another three camera lacations(from four different angle).
-6. At last, you should make sure how many pedestrians will be generated in the crowd. Press `F12` and follow the guide in the game, you will know how to do it.
-7. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except create 'data' fold) again to recorded another background and relevant information.
+4. Press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button(left or right button both works) to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. When the camera is fixed, press `F10` again to stop adjust camera and record camera location information automatically.
+5. Press `F11` to start drawing the crowd generation area. Use the method of connecting multiple points to form a polygon. Moving your game character in the scene. Press `I` to set a polygon vertex at current position. Press `F11` again to end the drawing. The program automatically connects the points set by the user in a sequence to form a polygon. In the process of setting the vertices, you can press `Tab` to move the focus to a specific vertex, and then you can reset that point. During setting the vertices, you can press `F10` to enter the camera view to observe the vertices or modify the camera settings. Press `F10` again to return to set vertices. (Note that it will be better to set a convex polygon area, do not let the sides of the polygon cross.) Following the guide to readjust the camera, and other three cameras (from four different angle). 
+6. At last, you should confirm how many pedestrians you want to generate in the scene. Press `F12` and follow the guide in the game, you will know how to do it.
+7. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except step 1) again to recorded another scene.
 
-After a series of background have been created. restart the game, after the opening animation, press `L` to launch the GCC-Collector to generate crowd with recorded information.
+After a series of scene have been created. restart the game, after the opening animation, press `L` to launch the GCC-Collector to generate crowd with recorded information.
 
 ## GCC-Labeler
 
-GCC-Labeler is written in Python3. It need thesepython library:
+GCC-Labeler is written in Python3. It needs the following Python libraries:
 - scipy
 - numpy
 - matplotlib
 - PIL
 
-All these could be installed by `pip`.
+You can install these libraries using `pip`.
 
-`main.py` is the entrance of the project. The line 22 and 23
-```
+`main.py` is the entrance of the project. Line 22 and 23 define the source path and the target path.
+``` python
 source_dir = 'source'
 target_dir = 'target'
 ```
-defined the data source and target directory name. you can change it to an directory you like. just run `python main.py`, the final crowd count images and labels will be generated in `target_dir`.
+Source path is the path where the file you generated using GCC-Collector is located. The target path is used to specify where to store the final produced image files and the annotation files. Change two paths according to your actual situation. Just run `python main.py`, the final crowd count images and labels will be generated in `target_dir`.
 
 For example, the source directory(the data folder we created in GCC-Collector) like this:
 ```
-source
+source/
 `-- part_11_2
     |-- 1534540881
     |   |-- part_0.raw
