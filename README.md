@@ -6,7 +6,9 @@ GCC-CL(**GCC** dataset **C**ollector and **L**abeler) is a tool for creating syn
 
 ## GCC-Collector
 
-GCC-Collector is a tool to generate crowd image and head point information. It is a custom plugin running along with GTAV, written in **C++**. with the exception of basic windows C++ API, It also need:
+GCC-Collector is a tool to generate crowd image and head points in GTA V. It is a custom plugin running along with GTAV, written in **C++**.
+
+### Prerequisites
 - [ScriptHookV](http://www.dev-c.com/gtav/scripthookv/)
 - [DirectXTK](https://github.com/Microsoft/DirectXTK)
 - [minhook](https://github.com/TsudaKageyu/minhook)
@@ -14,27 +16,27 @@ GCC-Collector is a tool to generate crowd image and head point information. It i
 
 ### Compilation
 
-1. navigate to GCC-Collector directory, use Visual Studio to open the project `GCC-Collector.sln`;
-2. open the project(GCC-Collector) property pages, `General/Windos SDK Version`, **select the latest win10 SDK** in your computer
-3. using `NuGet` install **minihook** and **eigen**
-4. in `GCC-Collector/deps`，The compiled DirectXTK and the lastest Script Hook V have been added into project.
-5. make sure Configution is **release**, Platform is **x64**, and then `ctrl + shift + B` to compile the project, The `GCC-Collector.asi` will be generated.
+1. Navigate to GCC-Collector directory, use Visual Studio to open the project `GCC-Collector.sln`.
+2. Open the project (GCC-Collector) property pages, `General/Windos SDK Version`, **select the latest win10 SDK** in your computer.
+3. Install **minihook** and **eigen** using  `NuGet`.
+4. Add the compiled DirectXTK and the lastest Script Hook V to the project (`GCC-Collector/deps`).
+5. Make sure Configution is **release**, Platform is **x64**, and then `ctrl + shift + B` to compile the project. As a result, the `GCC-Collector.asi` will be generated.
 
 ### Installation
 
-1. Following [Script Hook V](http://www.dev-c.com/gtav/scripthookv/) installation steps, copy `ScriptHookV.dll`, `dinput8.dll` and compiled `GCC-Collector.asi` to the game's main folder(where GTA5.exe is located);
+1. Following [Script Hook V](http://www.dev-c.com/gtav/scripthookv/) installation steps, copy `ScriptHookV.dll`, `dinput8.dll` and compiled `GCC-Collector.asi` to the game's root folder (where GTA5.exe is located);
 2. Use [this mod](https://www.gta5-mods.com/misc/no-chromatic-aberration-lens-distortion-1-41) to avoid chromatic aberration and lens distortion;
-3. Compile or directly use the compiled plugin-in `unlimitedLife.asi`, `noVehicle.asi`. Just copy these two asi to the games's main folder.
+3. Compile or directly use the compiled plugin-in `unlimitedLife.asi`, `noVehicle.asi`. Just copy these two asi to the games's root folder.
 > - `unlimitedLife.asi` make sure the player undead. 
 > - `noVehicle.asi` is optional. when you create some crowd image in street, you would not want some vehicle come into screen and cause an accident. This plugin-in avoid this things.
 
 ### How to run
 
 To create a series of crowd images in one scene, you should do these things:
-1. create a directory named `data` in the game's main folder.
-2. control your role in GTA5 to go to a place, which will be the background of the crowd images.
-3. press `F9` to start a scene script;
-4. press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. when the camera is ok, press `F10` again to stop adjust camera and record camera location information automatically.
+1. Create a directory named `data` in the game's main folder.
+2. Control your role in GTAV to go to a place, which will be the background of the crowd images.
+3. Press `F9` to start a scene script;
+4. Press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. When the camera is fixed, press `F10` again to stop adjust camera and record camera location information automatically.
 5. press `F11` to define the area where the crowd will be generated. It would be better if you create a convex area. press `I` to recorded one point of the area, and `F10` to toggle to the camera location you defined and press `F10` again you will back tou the role whole you control to define the area. If you want to reset some point of the area , just press `Tab` to the point and reset it. In the end , press `F11` again to end define the area. Following the guide to readjust the camera, and another three camera lacations(from four different angle).
 6. At last, you should make sure how many pedestrians will be generated in the crowd. Press `F12` and follow the guide in the game, you will know how to do it.
 7. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except create 'data' fold) again to recorded another background and relevant information.
