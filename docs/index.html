@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Learning from Synthetic Data for Crowd Counting in the Wild</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Horse race Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link
+		href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+		rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				manualControls: '#slider3-pager',
+			});
+		});
+	</script>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+			});
+		});
+	</script>
+	<!---End-smoth-scrolling---->
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header-top">
+				<div class="logo">
+					<a href="index.html">
+						<h1>Learning from Synthetic Data for <br />Crowd Counting in the Wild</h1>
+					</a>
+				</div>
+				<div style="text-align: center;">
+					<a href="#">Qi Wang</a>,
+					<a href="#">Junyu Gao</a>,
+					<a href="#">Wei Lin</a>,
+					<a href="#">Yuan Yuan</a>
+				</div>
+			</div>
+		</div>
+		<div class="slider">
+			<!-- Slideshow 3 -->
+			<ul class="rslides" id="slider">
+				<li><img src="images2/example_ori_1.png" alt="">
+				</li>
+				<li><img src="images2/example_label_1.jpg" alt="">
+				</li>
+				<li><img src="images2/example_mask_1.png" alt="">
+				</li>
+			</ul>
+			<!-- Slideshow 3 Pager -->
+			<ul id="slider3-pager">
+				<li><a href="#"><img src="images2/example_ori.png" alt=""></a></li>
+				<li><a href="#"><img src="images2/example_label.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images2/example_mask.png" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="raceing-section">
+				<div class="container">
+					<h3>GCC Dataset</h3>
+					<!-- <h4 style="text-align: center;">
+						<a href="https://github.com/gjy3035/GCC-CL">[Code]</a>
+						<a href="https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/gjy3035_mail_nwpu_edu_cn/Eo4L82dALJFDvUdy8rBm6B0BuQk6n5akJaN1WUF1BAeKUA?e=ge2cRg"
+							style="text-align:center;">[Download]</a>
+					</h4> -->
+					<div class="about-grids">
+						<p>
+							GCC dataset consists of 15,212 images, with resolution of 1080×1920, containing 7,625,843
+							persons. Compared
+							with the existing datasets, GCC is a more large-scale crowd counting dataset in both the
+							number
+							of images
+							and the number of persons.
+						</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="gallery-bottom">
+						<div class="section group">
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_1.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_1.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_2.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_2.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_3.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_3.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_4.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_4.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+						</div>
+						<div class="section group">
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_6.jpg" data-fancybox-group="gallery"
+									title="Lorem ipsum dolor sit amet"><img src="images2/GCC/GCC_6.jpg" class="img-style row6"
+										alt=""><span>
+									</span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_7.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_7.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_5.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_5.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+							<div class="grid_1_of_4 images_1_of_4">
+								<a class="fancybox" href="images2/GCC/GCC_8.jpg" data-fancybox-group="gallery"><img
+										src="images2/GCC/GCC_8.jpg" class="img-style row6" alt=""><span> </span></a>
+							</div>
+						</div>
+						<p style="text-align: center;"><strong>Figure 1.</strong> The exemplars of synthetic crowd
+							scenes
+							from the
+							proposed GCC dataset.</p>
+					</div>
+					<div class="about-grids">
+						<p>
+							Table 1 shows the basic information of GCC and the existing datasets. In addition to the
+							above
+							advantages,
+							GCC is more diverse than other real-world datasets.
+						</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="about-grids">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th rowspan="2">Dataset</th>
+									<th rowspan="2">Number of Images</th>
+									<th rowspan="2">Average Resolution</th>
+									<th colspan="4">Count Statistics</th>
+								</tr>
+								<tr>
+									<th>Total</th>
+									<th>Min</th>
+									<th>Age</th>
+									<th>Max</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>UCSD</td>
+									<td>2,000</td>
+									<td>158 &times; 238</td>
+									<td>49,885</td>
+									<td>11</td>
+									<td>25</td>
+									<td>46</td>
+								</tr>
+								<tr>
+									<td>Mall</td>
+									<td>2,000</td>
+									<td>320 &times; 240</td>
+									<td>62,325</td>
+									<td>13</td>
+									<td>31</td>
+									<td>53</td>
+								</tr>
+								<tr>
+									<td>UCF_CC_50</td>
+									<td>50</td>
+									<td>2101 &times; 2888</td>
+									<td>63,974</td>
+									<td>94</td>
+									<td>1,279</td>
+									<td>4,543</td>
+								</tr>
+								<tr>
+									<td>WorldExpo10</td>
+									<td>3,980</td>
+									<td>576 &times; 720</td>
+									<td>199,932</td>
+									<td>1</td>
+									<td>50</td>
+									<td>253</td>
+								</tr>
+								<tr>
+									<td>SHT A</td>
+									<td>482</td>
+									<td>589 &times; 868</td>
+									<td>241,677</td>
+									<td>33</td>
+									<td>501</td>
+									<td>3,139</td>
+								</tr>
+								<tr>
+									<td>SHT B</td>
+									<td>716</td>
+									<td>768 &times; 1024</td>
+									<td>88,488</td>
+									<td>9</td>
+									<td>123</td>
+									<td>578</td>
+								</tr>
+								<tr>
+									<td>UCF-QNRF</td>
+									<td>1,525</td>
+									<td>2013 &times; 2902</td>
+									<td>1,251,642</td>
+									<td>49</td>
+									<td>815</td>
+									<td>12,865</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td><strong>GCC</strong></td>
+									<td><strong>15,212</strong></td>
+									<td><strong>1080 &times; 1920</strong></td>
+									<td><strong>7,625,843</strong></td>
+									<td><strong>0</strong></td>
+									<td><strong>501</strong></td>
+									<td><strong>3995</strong></td>
+								</tr>
+							</tfoot>
+						</table>
+						<script type="text/javascript">
+							var ths = $('.about-grids th');
+							for (var i = 0; i < ths.length; i++) {
+								ths[i].style = 'vertical-align: middle;text-align: center;'
+							}
+							var tds = $('.about-grids td');
+							for (var i = 0; i < tds.length; i++) {
+								tds[i].style = 'vertical-align: middle;text-align: center;'
+							}
+						</script>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$('.fancybox').fancybox();
+				});
+			</script>
+			<div class="about-section">
+				<div class="container">
+					<h3>Deep Learning Model for Crowd Counting</h3>
+					<div class="about-grids">
+						<div class="col-md-4 about-grid">
+							<img src="images2/SFCN.png" class="img-responsive" alt="/">
+							<h4>Supervised Crowd Counting</h4>
+							<p>We design a spatial FCN (SFCN) to produce the density map, which is based on VGG-16 or
+								ResnNet 101. To be specific, the spatial encoder is added to the top of VGG-16 or
+								ResNet-101.</p>
+						</div>
+						<div class="col-md-8 about-grid">
+							<img src="images2/ucc.png" class="img-responsive" alt="/">
+							<h4>Unsupervised Crowd Counting via Domain Adaptation</h4>
+							<p>We propose unsupervised crowd counting via domain adaptation, which can effectively learn
+								domain-invariant feature between synthetic and real data. To be specific, we present a
+								SSIM
+								Embedding (SE) Cycle GAN to transform the synthetic image to the photo-realistic image.
+								Then
+								we will train a SFCN on the translated data. Finally, we directly test the model on the
+								real
+								data.</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="blog-section">
+				<div class="container">
+					<h3>Download Place</h3>
+					<div class="blog-grids">
+						<div class="col-md-3 blog-grid" id='paper' style="cursor:pointer;">
+							<img src="images2/paper.png" class="img-responsive" alt="/">
+							<a href="#">
+								<h4>Paper</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='code' style="cursor:pointer;">
+							<img src="images2/code.png" class="img-responsive" alt="/">
+							<a href="#">
+								<h4>GCC-CL</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='dataset' style="cursor:pointer;">
+							<img src="images2/data.png" class="img-responsive" alt="/">
+							<a href="#">
+								<h4>GCC Dataset</h4>
+							</a>
+						</div>
+						<div class="col-md-3 blog-grid" id='model' style="cursor:pointer;">
+							<img src="images2/model.png" class="img-responsive" alt="/">
+							<a href="#">
+								<h4>spatial FCN</h4>
+							</a>
+						</div>
+						<div class="clearfix"></div>
+						<script type="text/javascript">
+							$('#paper').on('click',function(){
+								window.location.href="#";
+							})
+							$('#code').on('click',function(){
+								window.location.href="https://github.com/gjy3035/GCC-CL";
+							})
+							$('#dataset').on('click',function(){
+								window.location.href="https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/gjy3035_mail_nwpu_edu_cn/Eo4L82dALJFDvUdy8rBm6B0BuQk6n5akJaN1WUF1BAeKUA?e=ge2cRg";
+							})
+							$('#model').on('click',function(){
+								window.location.href="https://github.com/gjy3035/GCC-SFCN";
+							})
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="container">
+					<div class="footer-top"></div>
+					<div class="footer-bottom">
+						<p>Copyright &copy; 2019.Center for OPTical IMagery Analysis and Learning (OPTIMAL)</p>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							$().UItoTop({ easingType: 'easeOutQuart' });
+						});
+					</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+						</span></a>
+				</div>
+			</div>
+
+</body>
+
+</html>
