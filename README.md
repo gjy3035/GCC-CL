@@ -27,7 +27,7 @@ GCC-Collector is a tool to generate crowd image and head points in GTA V. It is 
 2. Use [this mod(No Chromatic aberration & Lens distortion)](https://www.gta5-mods.com/misc/no-chromatic-aberration-lens-distortion-1-41) to avoid chromatic aberration and lens distortion;
 3. Compile or directly use the compiled plugin-in `unlimitedLife.asi`, `noVehicle.asi`. Just copy these two asi to the games's root folder.
 > - `unlimitedLife.asi` makes sure the player undead. 
-> - `noVehicle.asi` is optional. When you are creating some crowd images in the street, this plugin-in helps you avoid accidents caused by vehicles entering the scene.
+> - `noVehicle.asi` is optional. When you are creating some crowd images in the street, this plugin-in helps you avoid accidents caused by vehicles entering the scene. And it also set the number of pedestrians created by game scenario close to zero.
 
 ### How to work
 

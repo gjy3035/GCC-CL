@@ -21,6 +21,7 @@ void ScriptMain()
 		Ped myPed = PLAYER::PLAYER_PED_ID();
 		int health = PED::GET_PED_MAX_HEALTH(myPed);
 		ENTITY::SET_ENTITY_HEALTH(myPed, health);
+		PED::CLEAR_PED_BLOOD_DAMAGE(myPed);
 		WAIT(0);
 	}
 }
