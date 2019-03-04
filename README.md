@@ -121,4 +121,7 @@ target/
 
 ## Acknowledgments
 
-Some code borrows from [gtav-mod-scene-director](https://github.com/elsewhat/gtav-mod-scene-director) and [GTAVisionExport](https://github.com/umautobots/GTAVisionExport). The former gave us so many examples for how to use these functions in Script Hook V. The latter teached us a way to extract crowd mask.
+Some code borrows from [gtav-mod-scene-director](https://github.com/elsewhat/gtav-mod-scene-director) and [GTAVisionExport](https://github.com/umautobots/GTAVisionExport). The former gave us so many examples for how to use these functions in Script Hook V. The latter inspired us to extract crowd mask.
+
+## Citation
+If you use the code, please cite the following paper:
