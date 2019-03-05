@@ -2,6 +2,10 @@
 
 GCC-CL(**GCC** dataset **C**ollector and **L**abeler) is a tool for generating synethic crowd image datasets. It consists of two parts, collector and labeler.  The former is used to generate crowd image information; the latter produce input and output file through those information for crowd count models. 
 
+## Demonstration
+
+[![GCC-CL video](https://github.com/gjy3035/GCC-CL/blob/gh-pages/images/video.jpg?raw=true)](https://youtu.be/Hvl7xWkIueo "GCC dataset Collector and Labeler")
+
 ## GCC-Collector
 
 GCC-Collector is a tool to generate crowd image and head points in GTA V. It is a custom plugin running along with GTAV, written in **C++**.
