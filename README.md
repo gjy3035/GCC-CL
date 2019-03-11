@@ -127,6 +127,9 @@ target/
 
 Some code borrows from [gtav-mod-scene-director](https://github.com/elsewhat/gtav-mod-scene-director) and [GTAVisionExport](https://github.com/umautobots/GTAVisionExport). The former gave us so many examples for how to use these functions in Script Hook V. The latter inspired us to extract crowd mask.
 
+## Citation
+
+If you find this project useful for your research, please cite:
 ```
 @inproceedings{wang2019learning,
   title={Learning from Synthetic Data for Crowd Counting in the Wild},
