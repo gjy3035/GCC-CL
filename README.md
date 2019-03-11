@@ -131,7 +131,7 @@ Some code borrows from [gtav-mod-scene-director](https://github.com/elsewhat/gta
 @inproceedings{wang2019learning,
   title={Learning from Synthetic Data for Crowd Counting in the Wild},
   author={Wang, Qi and Gao, Junyu and Lin, Wei and Yuan, Yuan},
-  journal={Computer Vision and Pattern Recognition (CVPR)},
+  booktitle={Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2019}
 }
 ```
