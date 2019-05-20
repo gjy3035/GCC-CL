@@ -36,14 +36,15 @@ GCC-Collector is a tool to generate crowd image and head points in GTA V. It is 
 ### How to work
 
 To create a series of crowd images in one scene, You should follow the steps below:
-1. Create a directory named `data` in the game's root folder.
-2. Open GTA V in the **offline version**.
-2. Control your role in GTAV go to the scene where you want use it as the background of the crowd images which would be generated.
-3. Press `F9` to start a scene script;
-4. Press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button(left or right button both works) to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. When the camera has the desired angle, press `F10` again to stop adjust camera and record camera location information automatically.
-5. Press `F11` to start drawing the crowd generation area. Use the method of connecting multiple points to form a polygon by moving your game character in the scene. Press `I` to set a polygon vertex at current position. Press `F11` again to end the drawing. The program automatically connects the points in a sequence set by the user. In the process of setting the vertices, you can press `Tab` to move the focus to a specific vertex, and then you can reset that point. During setting the vertices, you can press `F10` to enter the camera view to observe the vertices or modify the camera settings. Press `F10` again to return to set vertices. (Note that it will be better to set a convex polygon area, do not let the sides of the polygon cross.) Following the guide to readjust the camera, and other three cameras (from four different angle). 
-6. At last, you should confirm how many pedestrians you want to generate in the scene. Press `F12` and follow the guide in the game, you will know how to do it.
-7. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except step 1) again to recorded another scene.
+1. download [GCC-COllector-Tool](https://github.com/gjy3035/GCC-CL/releases) and put `SceneDirectorAnim.txt` in the game's root folder.
+2. Create a directory named `data` in the game's root folder.
+3. Open GTA V in the **offline version**.
+4. Control your role in GTAV go to the scene where you want use it as the background of the crowd images which would be generated.
+5. Press `F9` to start a scene script;
+6. Press `F10` to adjust the camera. use `W, A, S, D` to move the camera forward, left, backward and right, mouse button(left or right button both works) to move up or down, `shift/ctrl` to speed up or slow down, and `+/-` to adjust the field of view. When the camera has the desired angle, press `F10` again to stop adjust camera and record camera location information automatically.
+7. Press `F11` to start drawing the crowd generation area. Use the method of connecting multiple points to form a polygon by moving your game character in the scene. Press `I` to set a polygon vertex at current position. Press `F11` again to end the drawing. The program automatically connects the points in a sequence set by the user. In the process of setting the vertices, you can press `Tab` to move the focus to a specific vertex, and then you can reset that point. During setting the vertices, you can press `F10` to enter the camera view to observe the vertices or modify the camera settings. Press `F10` again to return to set vertices. (Note that it will be better to set a convex polygon area, do not let the sides of the polygon cross.) Following the guide to readjust the camera, and other three cameras (from four different angle). 
+8. At last, you should confirm how many pedestrians you want to generate in the scene. Press `F12` and follow the guide in the game, you will know how to do it.
+9. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except step 1) again to recorded another scene.
 
 After a series of scene have been created. restart the game, after the opening animation, press `L` to launch the GCC-Collector to generate crowd with recorded information.
 
