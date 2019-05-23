@@ -304,7 +304,7 @@ void createOneScene(int hashlen, float sx, float dx, float sy, float dy, std::st
 		for (int i = ms; i < m; i++) {
 			std::string pedInfo = "\t<ped id=" + std::to_string(i) + ">\n";
 			getBonePixel(peds[i]);
-			pedInfo += "\t\t<SKEL_Head" + shx + " y=" + shy + " />\n";
+			pedInfo += "\t\t<SKEL_Head x=" + shx + " y=" + shy + " />\n";
 			pedInfo += "</ped>";
 			log_to_pedTxt(pedInfo, pedInfoFile);
 		}
