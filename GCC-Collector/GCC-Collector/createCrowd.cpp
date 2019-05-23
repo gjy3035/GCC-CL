@@ -260,9 +260,7 @@ void createOneScene(int hashlen, float sx, float dx, float sy, float dy, std::st
 	Animation animation;
 	log_to_pedTxt("<pedSet>", pedInfoFile);
 	while (ms < pedNum) {
-		// capture background
-		screenCap(ms, imgPathTemp, rawPathTemp);
-
+		
 		// place (m - ms) pedestrians
 		log_to_file("create (" + std::to_string(m) + " - " + std::to_string(ms) + ") pedestrians.");
 		for (int i = ms; i < m; i++) {
@@ -313,14 +311,14 @@ void createOneScene(int hashlen, float sx, float dx, float sy, float dy, std::st
 
 		// capture stencial raw file
 		screenStencilCap(ms, imgPathTemp, rawPathTemp);
-		
-		// capture screen image
-		screenCap(ms, imgPathTemp, rawPathTemp);
 
 		// delete pedestrian from screen
 		for (int i = ms; i < m; i++) {
 			PED::DELETE_PED(&(peds[i].pedActor));
 		}
+
+		// capture background
+		screenCap(ms, imgPathTemp, rawPathTemp);
 		
 		// update m and ms
 		m += maxPedOneTime, ms += maxPedOneTime;

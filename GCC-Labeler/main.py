@@ -16,7 +16,7 @@ def deleteFile(fold):
 
 def mkdir(goal_dir):
     if not path.exists(goal_dir):
-        os.mkdir(goal_dir)
+        os.makedirs(goal_dir)
 
 if __name__ == '__main__':
     source_dir = 'source'
@@ -28,7 +28,7 @@ if __name__ == '__main__':
         print('---', part_dir, '---')
         start, foldNo = time.time(), 1
 
-        goal_dir = path.join('target', 'scene' + part_dir[4:])
+        goal_dir = path.join(target_dir, 'scene' + part_dir[4:])
         mkdir(goal_dir)
             
         
