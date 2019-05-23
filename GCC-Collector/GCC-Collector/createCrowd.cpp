@@ -316,10 +316,10 @@ void createOneScene(int hashlen, float sx, float dx, float sy, float dy, std::st
 		for (int i = ms; i < m; i++) {
 			PED::DELETE_PED(&(peds[i].pedActor));
 		}
-
+		WAIT(10);
 		// capture background
 		screenCap(ms, imgPathTemp, rawPathTemp);
-		
+
 		// update m and ms
 		m += maxPedOneTime, ms += maxPedOneTime;
 		if (m >= pedNum) m = pedNum;
@@ -371,6 +371,7 @@ void createScene(int nowHave) {
 		for (int i = nowHave; i < m; i++) {
 			log_to_file("m = " + std::to_string(m));
 			std::string weather = setTimeAndWeather();
+			log_to_file("avg2 = " + std::to_string(avg2));
 			int pedNum = avg2 * 0.25 + rand() % int(avg2 * 0.75) + 1;
 			createOneScene(281, mix, mxx - mix, miy, mxy - miy, weather, pedNum);
 		}

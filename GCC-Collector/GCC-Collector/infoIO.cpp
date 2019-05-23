@@ -356,7 +356,7 @@ int readLevelFile()
 	int levNo;
 	info >> levNo;
 	info.close();
-	return level[levNo - 1].maxNum;
+	return level[levNo].maxNum;
 }
 
 int readImgNum()
