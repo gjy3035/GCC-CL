@@ -46,7 +46,9 @@ To create a series of crowd images in one scene, You should follow the steps bel
 8. At last, you should confirm how many pedestrians you want to generate in the scene. Press `F12` and follow the guide in the game, you will know how to do it.
 9. Now one scene has been created and saved, press `F5` to go back to original state, and do above steps(except step 1) again to recorded another scene.
 
-After a series of scene have been created. restart the game, after the opening animation, colse the minimap (or generating segement maps do not work well),and then press `L` to launch the GCC-Collector to generate crowd with recorded information.
+After a series of scene have been created. restart the game, after the opening animation
+1. colse the minimap if it is shown in the lower left corner of screen, or generating segement maps do not work well, as [issue#7](https://github.com/gjy3035/GCC-CL/issues/7) demonstrated;
+2. press `L` to launch the GCC-Collector to generate crowd with recorded.information
 
 ## GCC-Labeler
 
