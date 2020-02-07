@@ -49,6 +49,7 @@ To create a series of crowd images in one scene, You should follow the steps bel
 After a series of scene have been created. restart the game, after the opening animation
 1. colse the minimap if it is shown in the lower left corner of screen, or generating segement maps do not work well, as [issue#7](https://github.com/gjy3035/GCC-CL/issues/7) demonstrated;
 2. press `L` to launch the GCC-Collector to generate crowd with recorded.information
+3. press 'F5' if you want to leave the process and go back to normal. The process would end after one-round of collecting.(Not immediately)
 
 ## GCC-Labeler
 
