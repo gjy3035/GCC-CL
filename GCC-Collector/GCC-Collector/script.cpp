@@ -34,8 +34,10 @@ void scriptMain()
 				log_to_file("now have = " + std::to_string(nowHave));
 				if (nowHave != -1) {
 					createScene(nowHave);
+
 				}
 				WAIT(1000);
+				if (scriptStatus == scriptStop) { break; }
 			}
 			scriptStatus = scriptStop, sleepTime = 0;
 		}
@@ -134,5 +136,6 @@ void scriptMain()
 			WAIT(1);
 		}
 		WAIT(0);
+		
 	}
 }
