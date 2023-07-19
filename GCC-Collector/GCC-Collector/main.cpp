@@ -262,7 +262,7 @@ void clear_depth_stencil_view_hook(ID3D11DeviceContext* self, ID3D11DepthStencil
 		if (hr != S_OK) return;
 		tex->GetDesc(&desc);
 		
-		if (lastDsv == nullptr && desc.Format == DXGI_FORMAT_R32G8X24_TYPELESS && desc.Width > 600 && desc.Height > 600) {
+		if (lastDsv == nullptr && desc.Width > 600 && desc.Height > 600) {  // && desc.Format == DXGI_FORMAT_R32G8X24_TYPELESS
 			lastDsv = curDSV;
 			std::chrono::milliseconds ms = std::chrono::duration_cast< std::chrono::milliseconds >(
 				std::chrono::system_clock::now().time_since_epoch()
