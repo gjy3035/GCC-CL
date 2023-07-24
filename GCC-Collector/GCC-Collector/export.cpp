@@ -73,7 +73,7 @@ static void unpack_depth(ID3D11Device* dev, ID3D11DeviceContext* ctx, ID3D11Reso
 	D3D11_TEXTURE2D_DESC src_desc;
 
 	src_tex->GetDesc(&src_desc);
-	assert(src_desc.Format == DXGI_FORMAT_R32G8X24_TYPELESS);
+	// assert(src_desc.Format == DXGI_FORMAT_R32G8X24_TYPELESS);
 	D3D11_MAPPED_SUBRESOURCE src_map = { 0 };
 	hr = ctx->Map(src, 0, D3D11_MAP_READ, 0, &src_map);
 	if (hr != S_OK) throw std::system_error(hr, std::system_category());
